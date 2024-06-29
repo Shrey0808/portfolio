@@ -58,19 +58,31 @@
         .education-item:hover {
             transform: translateY(-10px);
         }
-        img.same-size {
-            width: 250px; /* Set your desired width */
-            height: 250px; /* Set your desired height */
-            object-fit: cover; /* Maintain aspect ratio and cover the container */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to all images */
-            border-radius: 8px; /* Optional: Add rounded corners */
+        .img-wrapper {
+            max-width: 250px;
+            margin-bottom: 20px;
         }
         .education-item img {
-            max-width: 300px;
-            border: 1px solid #343a40;
-            /* box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1); */
-            /* border-radius: 2px; */
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .education-item .text {
+            flex: 1;
             margin-left: 20px;
+        }
+        @media (max-width: 768px) {
+            .education-item {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .education-item .text {
+                margin-left: 0;
+                margin-bottom: 20px;
+            }
         }
         .footer {
             background-color: #343a40;
@@ -116,36 +128,41 @@
     </div>
 </nav>
 
-
 <!-- Education Section -->
 <div class="container">
     <h2 class="section-title">Education</h2>
     <div class="education-item">
+        <div class="img-wrapper">
+            <img src="static\college.jpg" alt="KIIT" class="img-fluid rounded">
+        </div>
         <div class="text">
             <h3>Bachelor of Technology in Computer Science</h3>
             <p><strong>KIIT University</strong></p>
             <p><em>2021-2025</em></p>
-            <p>I am pursuing my B.Tech degree from Kalinga Institute of Industrial Technology<br>( KIIT University ), Bhubaneshwar, Orissa.</p>
+            <p>I am pursuing my B.Tech degree from Kalinga Institute of Industrial Technology, Bhubaneshwar, Orissa.</p>
         </div>
-        <img src="static\college.jpg" alt="KIIT" class="img-fluid rounded same-size">
     </div>
     <div class="education-item">
+        <div class="img-wrapper">
+            <img src="static\school.jpg" alt="DAV GANDHINAGAR" class="img-fluid rounded">
+        </div>
         <div class="text">
             <h3>Higher Secondary Certificate</h3>
             <p><strong>D.A.V. Public School, Gandhinagar</strong></p>
             <p><em>2019-2021</em></p>
             <p>I completed my intermediate from D.A.V. Public School, Gandhinagar, Ranchi, Jharkhand.</p>
         </div>
-        <img src="static\school.jpg" alt="DAV GANDHINAGAR" class="img-fluid rounded same-size">
     </div>
     <div class="education-item">
+        <div class="img-wrapper">
+            <img src="static\school.jpg" alt="DAV GANDHINAGAR" class="img-fluid rounded">
+        </div>
         <div class="text">
             <h3>Secondary School Certificate</h3>
             <p><strong>D.A.V. Public School, Gandhinagar</strong></p>
             <p><em>2017 - 2019</em></p>
             <p>I completed my matriculate from D.A.V. Public School, Gandhinagar, Ranchi, Jharkhand.</p>
         </div>
-        <img src="static\school.jpg" alt="DAV GANDHINAGAR" class="img-fluid rounded same-size">
     </div>
 </div>
 
