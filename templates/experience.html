@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - My Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        .navbar {
+            margin-bottom: 50px;
+        }
+        .section-title {
+            font-size: 2.5em;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            width: 100px;
+            height: 3px;
+            background: #30cfd0;
+            display: block;
+            margin: 10px auto;
+        }
+        .experience-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .experience-item:hover {
+            transform: translateY(-10px);
+        }
+        .experience-item img {
+            max-width: 300px;
+            border: 1px solid #343a40;
+            margin-left: 20px;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer a {
+            color: #30cfd0;
+            text-decoration: none;
+        }
+        img.same-size {
+            width: 250px; /* Set your desired width */
+            height: 250px; /* Set your desired height */
+            object-fit: cover; /* Maintain aspect ratio and cover the container */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to all images */
+            border-radius: 8px; /* Optional: Add rounded corners */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">MyPortfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="education">Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="experience">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Experience Section -->
+<div class="container">
+    <h2 class="section-title">Experience</h2>
+    
+    <div class="experience-item">
+        <div class="text">
+            <h3 style="display: inline;">IIT Raipur</h3>
+            <p style="display: inline-block; float: right;">May 2023 - July 2023</p><br><br>
+            <p>- Contributed my findings in a research paper titled Trajectory Prediction Technology in Autonomous Driving Scenarios.</p>
+            <p>- The research paper focuses on various Reinforcement Learning Algorithms to predict the trajectory of an autonomous driving vehicle.</p>
+            <a href="https://drive.google.com/file/d/1ntiLNnO0Pd7RGSS4-LmYE4zbANjWf2rX/view" class="btn btn-primary mt-3" target="_blank">Completion Certificate</a>
+        </div>
+        <img src="static/raipur.png" alt="IIIT Raipur" class="img-fluid rounded same-size">
+    </div>
+
+    <div class="experience-item">
+        <div class="text">
+            <h3 style="display: inline;">Celebal Technologies</h3>
+            <p style="display: inline-block; float: right;">June 2024 - Present</p><br><br>
+            <p>- Built a model to predict the creditworthiness of individuals based on various financial attributes.</p>
+            <p>- Utilized random forest ensemble method to build the model and performed multiple preprocessing steps on the raw market-available data.</p>
+        </div>
+        <img src="static/celebal.png" alt="Celebal Technologies" class="img-fluid rounded same-size">
+    </div>
+
+    <div class="experience-item">
+        <div class="text">
+            <h3 style="display: inline;">RnPsoft Pvt. Ltd.</h3>
+            <p style="display: inline-block; float: right;">November 2023 - February 2024</p><br><br>
+            <p>- Developed an AI Anchor model for a renowned local news TV channel, Kalinga TV.</p>
+            <p>- Worked in a team of 4 with my focus on the Text-to-Speech conversion and translation from one language to another.</p>
+            <a href="https://drive.google.com/file/d/15xSk7wKLXjOYfapcWoGQEM9oe9Fe8U5E/view" class="btn btn-primary mt-3" target="_blank">Completion Certificate</a>
+        </div>
+        <img src="static/rnp.jpeg" alt="RnPsoft" class="img-fluid rounded same-size">
+    </div>
+
+    <div class="experience-item">
+        <div class="text">
+            <h3 style="display: inline;">CodeClause</h3>
+            <p style="display: inline-block; float: right;">August 2023 - September 2023</p><br><br>
+            <p>- Built an Animal Species Prediction Model.</p>
+            <p>- Used the concept of CNN to train a multiclass classification model which predicts the species of animal based on given image input.</p>
+            <a href="https://drive.google.com/file/d/16l9xTiBVZuQC41gYr9SMYcWXJU0EEMEg/view" class="btn btn-primary mt-3" target="_blank">Completion Certificate</a>
+        </div>
+        <img src="static/codeclause.png" alt="CodeClause" class="img-fluid rounded same-size">
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Shreyansh Sahay. All Rights Reserved.</p>
+        <p><a href="#">Back to top</a></p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

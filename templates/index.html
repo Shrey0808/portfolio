@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        .navbar {
+            margin-bottom: 50px;
+        }
+        .jumbotron {
+            background: linear-gradient(135deg, #6b8dd6, #30cfd0);
+            color: white;
+            padding: 100px 25px;
+            text-align: center;
+        }
+        .jumbotron h1 {
+            font-size: 3.5em;
+        }
+        .jumbotron p {
+            font-size: 1.2em;
+        }
+        .section-title {
+            font-size: 2.5em;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            width: 100px;
+            height: 3px;
+            background: #30cfd0;
+            display: block;
+            margin: 10px auto;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer a {
+            color: #30cfd0;
+            text-decoration: none;
+        }
+        /* Custom CSS to move the image up */
+        img.move-up {
+            margin-top: -60px; /* Adjust the value as needed */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to the image */
+            border-radius: 8px; /* Optional: Add rounded corners */
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">MyPortfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="education">Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="experience">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Jumbotron -->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Hello, I'm Shreyansh!</h1>
+        <p class="lead">I'm a passionate Data Scientist.</p>
+    </div>
+</div>
+
+
+<div id="about" class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <img src="static/image.jpg" alt="Your Image" class="img-fluid rounded-circle border border-dark mb-3 " >
+        </div>
+        <div class="col-md-8">
+            <p>Hi there! I'm Shreyansh, a data scientist passionate about extracting insights from complex data to drive informed decisions. With a background in mathematics and a knack for coding, I specialize in transforming raw data into actionable strategies. From predictive modeling to data visualization, I thrive on solving real-world problems through data-driven solutions. Let's collaborate and uncover the stories hidden within your data!
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Shreyansh Sahay. All Rights Reserved.</p>
+        <p><a href="#">Back to top</a></p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

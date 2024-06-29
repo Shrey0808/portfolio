@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - My Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        .navbar {
+            margin-bottom: 50px;
+        }
+        .section-title {
+            font-size: 2.5em;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            width: 100px;
+            height: 3px;
+            background: #30cfd0;
+            display: block;
+            margin: 10px auto;
+        }
+        .project-item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+        }
+        .project-item:hover {
+            transform: translateY(-10px);
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer a {
+            color: #30cfd0;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">MyPortfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="education">Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="experience">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Projects Section -->
+<div class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="project-item">
+        <h3>Digit Recognition System</h3>
+        <p>This model is trained to understand handwritten digits and is trained on MNIST dataset with an accuracy of 98.99%. [ Classification using CNN ]</p>
+        <a href="https://github.com/Shrey0808/DigitRecognitionSystem" class="btn btn-primary mt-3">Link to the model</a>
+    </div>
+    <div class="project-item">
+        <h3>Text Generation System</h3>
+        <p>This model understands the input document, and generates text related to the concept of the document when a input sequence is given. [ NLP using LSTM ]</p>
+        <a href="https://github.com/Shrey0808/TextGeneration" class="btn btn-primary mt-3">Link to the model</a>
+        </div>
+        
+        <div class="project-item">
+            <h3>Road Lane Detection</h3>
+            <p>This model detects the lane in which a car is being driven This system is mostly used in self driving cars for Lane detection. [ Image Segmentation using CV ].</p>
+            <a href="https://github.com/Shrey0808/RoadLaneDetection" class="btn btn-primary mt-3">Link to the model</a>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Shreyansh Sahay. All Rights Reserved.</p>
+        <p><a href="#">Back to top</a></p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
