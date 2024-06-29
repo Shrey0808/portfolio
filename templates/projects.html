@@ -91,20 +91,51 @@
 <div class="container">
     <h2 class="section-title">Projects</h2>
     <div class="project-item">
-        <h3>Digit Recognition System</h3>
-        <p>This model is trained to understand handwritten digits and is trained on MNIST dataset with an accuracy of 98.99%. [ Classification using CNN ]</p>
-        <a href="https://github.com/Shrey0808/DigitRecognitionSystem" class="btn btn-primary mt-3">Link to the model</a>
+        <h3>AI - Automatic Text Generation System</h3>
+        <p><strong>AIM:</strong> To generate meaningful content based on an input sequence.</p>
+        <ul>
+            <li>Developed a text generation model trained on a comprehensive text file with 18,701 characters and 52 unique characters.</li>
+            <li>Model was trained on a Recurrent Neural Network Architecture (RNN) using LSTM, achieving an accuracy of 94.66%.</li>
+            <li><strong>Technologies:</strong> Python, TensorFlow</li>
+        </ul>
+        <a href="https://github.com/Shrey0808/TextGeneration" class="btn btn-primary mt-3" target="_blank">Link to the model</a>
     </div>
+
     <div class="project-item">
-        <h3>Text Generation System</h3>
-        <p>This model understands the input document, and generates text related to the concept of the document when a input sequence is given. [ NLP using LSTM ]</p>
-        <a href="https://github.com/Shrey0808/TextGeneration" class="btn btn-primary mt-3">Link to the model</a>
-        </div>
-        
-        <div class="project-item">
-            <h3>Road Lane Detection</h3>
-            <p>This model detects the lane in which a car is being driven This system is mostly used in self driving cars for Lane detection. [ Image Segmentation using CV ].</p>
-            <a href="https://github.com/Shrey0808/RoadLaneDetection" class="btn btn-primary mt-3">Link to the model</a>
+        <h3>Road Lane Detection for Autonomous Vehicles</h3>
+        <p><strong>AIM:</strong> To develop a system that detects lane lines in real-time from video inputs to aid autonomous driving.</p>
+        <ul>
+            <li>Used computer vision techniques to take video input from the cameras of an autonomous driving vehicle and returned a video with the road lanes marked for the vehicle to decide its path.</li>
+            <li>Implemented various computer vision techniques like color masks, grayscaling, Gaussian smoothing, Canny edge detection, region selection, and Hough transformation.</li>
+            <li>Took video input and divided it into multiple frames, applied the various CV Techniques, and combined all the frames using MoviePy.</li>
+            <li><strong>Technologies:</strong> Python, OpenCV, MoviePy</li>
+        </ul>
+        <a href="https://github.com/Shrey0808/RoadLaneDetection" class="btn btn-primary mt-3" target="_blank">Link to the model</a>
+    </div>
+
+    <div class="project-item">
+        <h3>AI Job Finder</h3>
+        <p><strong>AIM:</strong> To provide AI-based job recommendations using ML algorithms and real-time job data scraping from multiple websites.</p>
+        <ul>
+            <li>The model scrapes 200 job listings in real-time from LinkedIn, Internshala, Timesjob, and Naukri.com, fetching the top 40 jobs from each site based on the user's inputs for job title, experience, and location.</li>
+            <li>User inputs are collected through a user-friendly interface, with Django powering the backend and HTML/CSS/JavaScript creating a responsive frontend. The fetched job results are then displayed on the website, allowing users to either view all jobs at once or filter them based on the platform.</li>
+            <li>The standout feature of the model is its AI recommendation system. It converts user inputs into vectors and employs cosine similarity to rank and provide the top job recommendations from the fetched listings.</li>
+            <li><strong>Technologies:</strong> Python, Django, MongoDB, HTML, CSS, JavaScript, Bootstrap, Selenium, Beautiful Soup, TensorFlow, Scikit-learn</li>
+        </ul>
+        <a href="https://github.com/Shrey0808/AI-Job-Finder" class="btn btn-primary mt-3" target="_blank">Link to the model</a>
+    </div>
+    
+    <div class="project-item">
+        <h3>Handwritten Number Predictor</h3>
+        <p><strong>AIM:</strong> To predict handwritten numbers from image inputs using deep learning and computer vision techniques.</p>
+        <ul>
+            <li>The first base model is a Digit Recognition System trained using the MNIST dataset with 60,000 training and 10,000 testing images, i.e., 6000 and 1000 images respectively for each unique digit from 0-9.</li>
+            <li>Employed Convolutional Neural Networks (CNN) to train the model, achieving an accuracy of 99.10% on the testing dataset.</li>
+            <li>The second advanced model uses computer vision techniques to segment the image of a handwritten number into individual digits and make predictions for each digit.</li>
+            <li>The frontend was designed and implemented using HTML, CSS, and JavaScript, and the backend was deployed using Flask.</li>
+            <li><strong>Technologies:</strong> Python, TensorFlow, Scikit-learn, Computer Vision (CV)</li>
+        </ul>
+        <a href="https://github.com/Shrey0808/DigitRecognitionSystem" class="btn btn-primary mt-3" target="_blank">Link to the model</a>
     </div>
 </div>
 
